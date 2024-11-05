@@ -1,15 +1,18 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import { useLoaderData, useParams } from 'react-router-dom';
 import HeadingBanner from './HeadingBanner';
 import Specification from './Specification';
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { FaRegHeart } from "react-icons/fa6";
-import { addToCart } from './utilities';
+import { addToCart, addToWishlist } from './utilities';
+
 
 
 
 
 const ProductDetails = () => {
+
+
     const { id } = useParams()
     const data = useLoaderData()
     const [product, setProduct] = useState({})
@@ -17,7 +20,6 @@ const ProductDetails = () => {
 
     useEffect(() => {
         const singleProduct = data.find(item => item.product_id === parseInt(id))
-
 
         setProduct(singleProduct)
     }, [id, data])
@@ -31,6 +33,10 @@ const ProductDetails = () => {
     const handleAddToCart= (product) =>{
         addToCart(product)
 
+
+    }
+    const handleAddToWishlist = (product)=>{
+        addToWishlist(product)
     }
 
     return (
@@ -84,7 +90,7 @@ const ProductDetails = () => {
                         <div className='mt-5 flex items-center gap-4'>
                             <button onClick={()=> handleAddToCart(product)} className='btn text-md rounded-full px-8 text-white bg-[#9538E2]'>Add To Cart <MdOutlineShoppingCart />
                             </button>
-                            <button className='btn rounded-full'><FaRegHeart />
+                            <button onClick={()=> handleAddToWishlist(product)} className='btn rounded-full'><FaRegHeart />
                             </button>
 
                         </div>

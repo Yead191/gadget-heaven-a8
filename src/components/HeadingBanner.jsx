@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 
 
@@ -11,13 +11,23 @@ const HeadingBanner = ({ title, subtitle, button, height }) => {
 
             {button && (
                 <div className='mt-5 '>
-                    <Link to='/dashboard/cart'>
-                        <button className='btn rounded-full px-14 mr-5 '>{button[0]}</button>
-                    </Link>
-                    <Link to='/dashboard/wishlist'>
-                        <button className='btn rounded-full px-14'>{button[1]}</button>
-
-                    </Link>
+                     <NavLink
+                        to='/dashboard'
+                        className={({ isActive }) =>
+                            isActive ? 'btn rounded-full px-14 mr-5 ' : 'bg-[#6B2CA2] text-white btn rounded-full px-14 mr-5'
+                        }
+                        end
+                    >
+                        {button[0]}
+                    </NavLink>
+                    <NavLink
+                        to='/dashboard/wishlist'
+                        className={({ isActive }) =>
+                            isActive ? 'btn rounded-full px-14 ' : 'btn rounded-full px-14 bg-[#6B2CA2] text-white'
+                        }
+                    >
+                        {button[1]}
+                    </NavLink>
                 </div>
             )}
         </div>

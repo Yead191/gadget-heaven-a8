@@ -46,7 +46,7 @@ import Wishlist from "../components/Wishlist";
             element: <Dashboard></Dashboard>,
             children:[
                 {
-                    path: '/dashboard/cart',
+                    path: '/dashboard',
                     element: <Cart></Cart>
                 },
                 {
