@@ -1,0 +1,167 @@
+[
+    {
+        "product_id": 1,
+        "product_title": "Dell G16 Gaming Laptop 13th gen",
+        "product_image": "https://i.ibb.co.com/vsRs6vW/notebook-g16-7630-nt-white-gallery-1.jpg",
+        "category": "Laptops",
+        "price": 1200,
+        "description": "A high-performance gaming laptop with top specs.",
+        "specification": ["Intel i7", "16GB RAM", "512GB SSD", "NVIDIA GTX 1660"],
+        "availability": true,
+        "rating": 4.5
+    },
+    {
+        "product_id": 2,
+        "product_title": "ASUS Zenbook S 13 OLED UX5304MA",
+        "product_image": "https://i.ibb.co.com/hRwM0Cq/images-q-tbn-ANd9-Gc-TLo-FIDOHGxu5pe-Z-IQWPCx2rq-ELF47-F8qxy-A-s.jpg",
+        "category": "Laptops",
+        "price": 950,
+        "description": "Slim and lightweight ultrabook for productivity.",
+        "specification": ["Intel i5", "8GB RAM", "256GB SSD"],
+        "availability": true,
+        "rating": 4.2
+    },
+    {
+        "product_id": 3,
+        "product_title": "HP Pavilion Gaming Laptop, Ryzen 5",
+        "product_image": "https://i.ibb.co.com/wcxbVj7/615zbvo-St-ZL-AC-SL1125.jpg",
+        "category": "Laptops",
+        "price": 1050,
+        "description": "Laptop built for Gaming professionals.",
+        "specification": ["Intel i5", "16GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": 4,
+        "product_title": "Apple MacBook Pro 14-inch M1 Pro",
+        "product_image": "https://i.ibb.co.com/KbQwZRn/61v-FO3-R5-UNL-AC-SL1500.jpg",
+        "category": "Macbook",
+        "price": 1100,
+        "description": "Flexible 2-in-1 laptop with touchscreen. Professional Mac for Professionals",
+        "specification": ["Apple M1", "32GB RAM", "256GB SSD"],
+        "availability": false,
+        "rating": 5.0
+    },
+    {
+        "product_id": 5,
+        "product_title": "Apple MacBook Pro 14 2023 with M3 Chips ",
+        "product_image": "https://i.ibb.co.com/gWhYBBs/Mac-Book-Pro-M3-2023-Space-Black-Price-in-Bangladesh-MC-Solution-BD-1200x900.webp",
+        "category": "Macbook",
+        "price": 1550,
+        "description": "Quality laptop for heavy tasks.",
+        "specification": ["APPLE M3", "16GB RAM", "512GB SSD"],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 6,
+        "product_title": "MacBook Air (15-inch, M3, 2024)",
+        "product_image": "https://i.ibb.co.com/fnCbQq5/mba-15-m3-2024-hero.png",
+        "category": "Macbook",
+        "price": 1400,
+        "description": "Lightweight Chromebook for web-based tasks.",
+        "specification": ["Apple M3", "8GB RAM", "256GB"],
+        "availability": true,
+        "rating": 4.9
+    },
+    {
+        "product_id": 7,
+        "product_title": "Galaxy S24 Ultra",
+        "product_image": "https://i.ibb.co.com/k6L09sT/Titanium-Gray-S24-Ultra-1.webp",
+        "category": "Phones",
+        "price": 800,
+        "description": "Samsung Galaxy S24 Ultra is the latest and greatest flagship phone from Samsung, and it's packed with features that are sure to impress even the most demanding users. It has a gorgeous 6.8-inch Dynamic LTPO AMOLED 2X display with a 120Hz refresh rate.",
+        "specification": ["6.7-inch display", "512GB Storage", "Triple camera"],
+        "availability": true,
+        "rating": 5.0
+    },
+    {
+        "product_id": 8,
+        "product_title": "OnePlus 12",
+        "product_image": "https://i.ibb.co.com/Lrfb0TD/1-m00-43-ec-ckvtlmq0-d2afrwnaanmzr5p60g201.png",
+        "category": "Phones",
+        "price": 300,
+        "description": "The OnePlus 12 is a high-performance flagship smartphone designed for speed and innovation. Featuring a vibrant 6.7-inch AMOLED display with a 120Hz refresh rate, it delivers smooth visuals and stunning clarity. Powered by the latest Snapdragon processor and equipped with up to 16GB of RAM, the OnePlus 12 ensures seamless multitasking and lightning-fast performance.",
+        "specification": ["6.5-inch display", "64GB Storage", "Dual camera"],
+        "availability": true,
+        "rating": 4.1
+    },
+    {
+        "product_id": 9,
+        "product_title": "Xiaomi 12",
+        "product_image": "https://i.ibb.co.com/fQXYn5Q/XIAOMI-12-4-6074.jpg",
+        "category": "Phones",
+        "price": 150,
+        "description": "The Xiaomi 12 is a sleek and powerful smartphone that delivers top-tier performance at an affordable price. Equipped with a 6.28-inch AMOLED display and a 120Hz refresh rate, it offers crisp visuals and smooth scrolling. Powered by the Qualcomm Snapdragon 8 Gen 1 chipset, the Xiaomi 12 ensures fast, efficient performance for gaming, multitasking, and more. Its versatile triple-camera system, including a 50MP main sensor, captures stunning photos and videos with great detail. With 5G connectivity, a large battery for all-day usage, and fast charging capabilities, the Xiaomi 12 is a well-rounded device for those seeking premium features without the premium price.",
+        "specification": ["6.9-inch display", "256GB Storage", "Triple camera"],
+        "availability": true,
+        "rating": 3.9
+    },
+    {
+        "product_id": 10,
+        "product_title": "iPhone 13 Pro",
+        "product_image": "https://i.ibb.co.com/4sfHVQ4/Apple-i-Phone-13-Pro-i-Phone-13-Pro-Max-09142021-inline-jpg-large.jpg",
+        "category": "iPhone",
+        "price": 999,
+        "description": "The iPhone 13 Pro is a powerful and sophisticated smartphone that blends cutting-edge technology with a sleek design. Featuring a stunning 6.1-inch Super Retina XDR display with ProMotion, it delivers ultra-smooth scrolling and vibrant colors, making everything from photos to videos look incredibly lifelike. Powered by the A15 Bionic chip, the iPhone 13 Pro offers lightning-fast performance, capable of handling demanding apps and multitasking with ease.",
+        "specification": ["6.1-inch OLED", "128GB Storage", "Triple camera"],
+        "availability": true,
+        "rating": 4.8
+    },
+    {
+        "product_id": 11,
+        "product_title": "iPhone SE (2023)",
+        "product_image": "https://i.ibb.co.com/TYhDbTg/maxresdefault.jpg",
+        "category": "iPhone",
+        "price": 450,
+        "description": "The iPhone SE (2022) offers classic design with modern power. Equipped with the A15 Bionic chip, it delivers impressive performance in a compact, affordable package. The 4.7-inch Retina HD display offers vibrant colors, while the 12MP camera with Smart HDR 4 captures stunning photos. With 5G connectivity, Touch ID, and up to 256GB of storage, the iPhone SE is perfect for those who want powerful features in a smaller, budget-friendly device.",
+        "specification": ["4.7-inch display", "64GB Storage", "Single camera"],
+        "availability": true,
+        "rating": 4.3
+    },
+    {
+        "product_id": 12,
+        "product_title": "iPhone 16 Pro Max",
+        "product_image": "https://i.ibb.co.com/9hGCmHQ/Apple-i-Phone-16-Pro-hero-geo-240909-inline-jpg-large.jpg",
+        "category": "iPhone",
+        "price": 1200,
+        "description": "The iPhone 16 Pro Max is the ultimate flagship, featuring a 6.7-inch Super Retina XDR display with ProMotion for ultra-smooth visuals. Powered by the new A18 Bionic chip, it delivers industry-leading performance and efficiency. The enhanced triple-camera system includes a 48MP main sensor with improved low-light performance and ProRAW for professional-grade photos. With 5G, up to 2TB of storage, and a longer battery life, the iPhone 16 Pro Max is the perfect device for those seeking cutting-edge technology, unmatched power, and a premium design.",
+        "specification": ["6.7-inch OLED", "256GB Storage", "Dual camera"],
+        "availability": true,
+        "rating": 5.0
+    },
+    {
+        "product_id": 13,
+        "product_title": "EarFun Air Mini 2 True Wireless Earbuds",
+        "product_image": "https://i.ibb.co.com/sm2LMgs/air-mini-2-01-500x500.webp",
+        "category": "Accessories",
+        "price": 120,
+        "description": "Compact wireless earbuds with noise cancellation.",
+        "specification": ["Bluetooth 5.0", "Active Noise Cancelling", "6 hours battery life"],
+        "availability": true,
+        "rating": 4.4
+    },
+    {
+        "product_id": 14,
+        "product_title": "VINCOSY 50000mAh Power Bank ",
+        "product_image": "https://i.ibb.co.com/s6NLD1n/71-GGWUz-HPd-L-AC-SL1500.jpg",
+        "category": "Accessories",
+        "price": 60,
+        "description": "High-capacity power bank with fast charging.",
+        "specification": ["10000mAh", "Dual USB ports", "Quick Charge 3.0"],
+        "availability": false,
+        "rating": 4.0
+    },
+    {
+        "product_id": 15,
+        "product_title": "iPhone 14 Pro Max",
+        "product_image": "https://i.ibb.co.com/DY43fbz/Apple-i-Phone-14-Pro-i-Phone-14-Pro-Max-silver-220907-inline-jpg-large.jpg",
+        "category": "iPhone",
+        "price": 1000,
+        "description": "The iPhone 14 Pro Max offers a stunning 6.7-inch Always-On OLED display with Dynamic Island, which offers an interactive way to engage with your notifications. Powered by the A16 Bionic chip, it delivers top-tier performance for apps, gaming, and multitasking. Its advanced 48MP quad-camera system includes the new 2x telephoto lens and improved night mode, making photography and video recording a breeze. With 5G support, enhanced battery life, and premium design, the iPhone 14 Pro Max is a flagship powerhouse that sets new standards in mobile technology.",
+        "specification": ["6.7-inch OLED", "256GB Storage", "Dual camera"],
+        "availability": true,
+        "rating": 4.8
+    }
+]
