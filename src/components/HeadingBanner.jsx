@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 
 
@@ -10,8 +11,13 @@ const HeadingBanner = ({ title, subtitle, button, height }) => {
 
             {button && (
                 <div className='mt-5 '>
-                    <button className='btn rounded-full px-14 mr-5 '>{button[0]}</button>
-                    <button className='btn rounded-full px-14'>{button[1]}</button>
+                    <Link to='/dashboard/cart'>
+                        <button className='btn rounded-full px-14 mr-5 '>{button[0]}</button>
+                    </Link>
+                    <Link to='/dashboard/wishlist'>
+                        <button className='btn rounded-full px-14'>{button[1]}</button>
+
+                    </Link>
                 </div>
             )}
         </div>

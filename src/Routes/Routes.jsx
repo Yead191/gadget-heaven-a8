@@ -8,6 +8,8 @@ import ProductCards from "../components/ProductCards";
 import ErrorPage from "../components/ErrorPage";
 import ProductDetails from "../components/ProductDetails";
 import Dashboard from "../pages/Dashboard";
+import Cart from "../components/Cart";
+import Wishlist from "../components/Wishlist";
 
 
 
@@ -41,7 +43,17 @@ import Dashboard from "../pages/Dashboard";
         },
         {
             path: '/dashboard',
-            element: <Dashboard></Dashboard>
+            element: <Dashboard></Dashboard>,
+            children:[
+                {
+                    path: '/dashboard/cart',
+                    element: <Cart></Cart>
+                },
+                {
+                    path: '/dashboard/wishlist',
+                    element: <Wishlist></Wishlist>
+                }
+            ]
         }
       ]
     },
