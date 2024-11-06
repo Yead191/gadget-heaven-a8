@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co.com/z2nq0tm/Luxury-24k-Gold-i-Phone-16-Pro-Pro-Max.webp",
+        "title": "Exclusive Deal On iPhone 16 Series",
+        "startDate": "01 November, 2024",
+        "endDate": "30 November, 2024",
+        "description": "Be the first to own the latest Apple product! Ready stock available now for the iPhone 16 Series. Enjoy exclusive offers and limited-time deals. Call +8809613084048 to place your order.",
+        "buttonText": "View Details",
+        "buttonLink": "/offer/iphone16"
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co.com/FB8WnBk/samsungs.webp",
+        "title": "Get the latest Samsung smartphones at unbeatable prices",
+        "startDate": "01 November, 2024",
+        "endDate": "20 November, 2024",
+        "description": "Upgrade your mobile experience with Samsung's flagship smartphones, now available at discounted rates!",
+        "buttonText": "View Details",
+        "buttonLink": "/offer/samsung"
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co.com/MnxNKPM/images-q-tbn-ANd9-Gc-Rk-Ucg-Yi73-R4-DY-Lb-JW33-Dvt0-MICy-Lzzo-Bl-IA-s.jpg",
+        "title": "Capture Life's Moments in Stunning Detail with Pixel Phones - Best Price!",
+        "startDate": "01 November, 2024",
+        "endDate": "30 December, 2024",
+        "description": "From stunning low-light shots to incredible portrait mode, these smartphones offer exceptional camera capabilities. Get yours today at a limited-time discount and relive your memories in vivid detail.",
+        "buttonText": "View Details",
+        "buttonLink": "/offer/pixel"
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co.com/NYZCzXV/Macbook-Air-M1-Chip.jpg",
+        "title": "Special Offer on MacBook Air",
+        "startDate": "01 November, 2024",
+        "endDate": "10 November, 2024",
+        "description": "Experience powerful performance with the new MacBook Air. Now available at an exclusive discount. Don’t miss the chance to upgrade your tech!",
+        "buttonText": "View Details",
+        "buttonLink": "/offer/macbook-air"
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co.com/qd0w628/images-q-tbn-ANd9-Gc-Qfu9-Xo-C11-Sf-KKnq4f2-JPChs-VCD9d-Uji8snog-s.jpg",
+        "title": "Premium Sony Headphones at Best Price!",
+        "startDate": "01 November, 2024",
+        "endDate": "25 November, 2024",
+        "description": "Immerse yourself in high-quality sound with Sony's premium headphones. Grab them now at a discounted price and elevate your listening experience.",
+        "buttonText": "View Details",
+        "buttonLink": "/offer/sony-headphones"
+    }
+]

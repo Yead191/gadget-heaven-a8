@@ -8,7 +8,7 @@ import { Toaster } from 'react-hot-toast';
 const Root = () => {
     return (
         <div className='flex flex-col min-h-screen bg-base-200'>
-            <Toaster position="top-right"></Toaster>
+            <Toaster position="	bottom-right"></Toaster>
             <Navbar></Navbar>
             <div className='flex-grow'>
                 <Outlet></Outlet>

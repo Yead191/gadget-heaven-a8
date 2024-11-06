@@ -11,6 +11,7 @@ import Dashboard from "../pages/Dashboard";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
 import Statistics from "../pages/Statistics";
+import Offer from "../pages/Offer";
 
 
 
@@ -63,6 +64,11 @@ import Statistics from "../pages/Statistics";
             element: <Statistics></Statistics>,
             loader: ()=> fetch('../fakeData.json')
 
+        },
+        {
+            path: '/offers',
+            element: <Offer></Offer>,
+            loader: ()=> fetch('../offer.json')
         }
       ]
     },

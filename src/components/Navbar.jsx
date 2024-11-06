@@ -13,6 +13,7 @@ const Navbar = () => {
             <li><NavLink to='/'>Home</NavLink></li>
             <li><NavLink to='/statistics'>Statistics</NavLink></li>
             <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
+            <li><NavLink to='/offers'>Offers</NavLink></li>
         </>
     )
 
@@ -37,14 +38,14 @@ const Navbar = () => {
                         </div>
                         <ul
                             tabIndex={0}
-                            className={`menu menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow ${isHome ? 'text-white bg-[#9538E2]' : 'text-black bg-white'}`}>
+                            className={`menu  menu-sm dropdown-content rounded-box z-[1] mt-3 w-52 p-2 shadow ${isHome ? 'text-white bg-[#9538E2]' : 'text-black bg-white'}`}>
                             {links}
                         </ul>
                     </div>
                     <Link to='/' className={`btn btn-ghost text-xl ${isHome ? 'text-white' : 'text-black'}`}>Gadget Heaven</Link>
                 </div>
                 <div className="navbar-center hidden lg:flex">
-                    <ul className={`menu menu-horizontal px-1 rounded-lg ${isHome ? 'text-white bg-[#9538E2]' : 'text-black bg-white'}`}>
+                    <ul className={`menu menu-horizontal gap-3 px-1 rounded-lg ${isHome ? 'text-white bg-[#9538E2]' : 'text-black bg-white'}`}>
                         {links}
                     </ul>
                 </div>
