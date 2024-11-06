@@ -29,6 +29,7 @@ const ProductDetails = () => {
     const { product_image, product_title, price, availability, description, specification = [], rating } = product
     
 
+    const [isFav , setIsFav] = useState(false)
 
     const handleAddToCart= (product) =>{
         addToCart(product)
@@ -37,6 +38,7 @@ const ProductDetails = () => {
     }
     const handleAddToWishlist = (product)=>{
         addToWishlist(product)
+        setIsFav(true)
     }
 
     return (
@@ -90,7 +92,7 @@ const ProductDetails = () => {
                         <div className='mt-5 flex items-center gap-4'>
                             <button onClick={()=> handleAddToCart(product)} className='btn text-md rounded-full px-8 text-white bg-[#9538E2]'>Add To Cart <MdOutlineShoppingCart />
                             </button>
-                            <button onClick={()=> handleAddToWishlist(product)} className='btn rounded-full'><FaRegHeart />
+                            <button disabled={isFav} onClick={()=> handleAddToWishlist(product)} className='btn rounded-full'><FaRegHeart />
                             </button>
 
                         </div>

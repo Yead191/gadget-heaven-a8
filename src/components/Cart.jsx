@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { getStoredProductList, removeCart } from '../components/utilities';
 import CartDetails from './CartDetails';
-import { NavLink } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 // import { useLoaderData } from 'react-router-dom';
 import modalLogo from '../assets/Group.png'
 
@@ -40,6 +40,8 @@ const Cart = () => {
         setTotal(total)
 
     }
+
+    const goHome = useNavigate()
     const handleProduct = () => {
         document.getElementById('my_modal_2').showModal()
 
@@ -68,7 +70,7 @@ const Cart = () => {
                     >
                         Sort by Price
                     </button>
-                    <button onClick={() => handleProduct()} className='btn w-full md:w-auto btn-md rounded-full border border-[#9538E2]'>Purchase</button>
+                    <button disabled={products.length === 0} onClick={() => handleProduct()} className='btn w-full md:w-auto btn-md rounded-full border border-[#9538E2]'>Purchase</button>
                     {/* modal */}
                     {/* Open the modal using document.getElementById('ID').showModal() method */}
                     <button className="btn hidden" onClick={() => document.getElementById('my_modal_2').showModal()}>open modal</button>
@@ -82,7 +84,7 @@ const Cart = () => {
                             <p className="py-4 text-sm  ">Thanks for purchasing</p>
                             <p className='text-base font-semibold'>Total: ${total}</p>
                             <form method="dialog" className="modal-backdrop my-3">
-                                <button className='btn'>close</button>
+                                <button onClick={()=> goHome('/')} className='btn'>close</button>
                             </form>
 
                         </div>
