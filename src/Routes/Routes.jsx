@@ -47,7 +47,8 @@ import Wishlist from "../components/Wishlist";
             children:[
                 {
                     path: '/dashboard',
-                    element: <Cart></Cart>
+                    element: <Cart></Cart>,
+                    // loader: ()=> fetch('../fakeData.json')
                 },
                 {
                     path: '/dashboard/wishlist',

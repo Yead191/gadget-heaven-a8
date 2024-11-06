@@ -9,16 +9,16 @@ const CartDetails = ({ product, handleRemove }) => {
     
 
     return (
-        <div className="card card-side bg-white shadow-xl mb-4 ">
+        <div className="card card-side bg-white shadow-xl mb-4 h-[170px]">
             <figure>
-                <img className='w-[200px] object-cover h-[160px]'
+                <img className='w-[200px] p-2 object-cover h-[160px]'
                     src ={product_image}
                     alt="" />
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{product_title}</h2>
-                <p className='w-[1000px]'> {description}</p>
-                <p>Price: ${price}</p>
+                <p className='w-[1000px] overflow-y-scroll'> {description}</p>
+                <p className="mt-2">Price: ${price}</p>
 
 
                 

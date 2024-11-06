@@ -1,4 +1,6 @@
 import React from 'react';
+import { IoCartOutline } from "react-icons/io5";
+import { LuHeart } from "react-icons/lu";
 import { Link, NavLink, useLocation } from 'react-router-dom';
 
 const Navbar = () => {
@@ -45,8 +47,11 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <div className="navbar-end">
-                    <a className="btn">Button</a>
+                <div className="navbar-end gap-3">
+                    <button className="btn"><IoCartOutline className='text-xl' />
+                    </button>
+                    <button className="btn"><LuHeart className='text-xl' />
+                    </button>
                 </div>
             </div>
         </div>

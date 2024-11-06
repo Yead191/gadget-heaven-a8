@@ -1,9 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { getStoredProductList, removeCart } from '../components/utilities';
 import CartDetails from './CartDetails';
+import { NavLink } from 'react-router-dom';
+// import { useLoaderData } from 'react-router-dom';
+import modalLogo from '../assets/Group.png'
+
 
 
 const Cart = () => {
+    // const data = useLoaderData()
+    const [isSorted, setIsSorted] = useState(false)
+    const handleSort = () => {
+        const sorted = [...products].sort((a, b) => b.price - a.price)
+        setProducts(sorted)
+        setIsSorted(true);
+
+
+    }
 
 
     const [products, setProducts] = useState([])
@@ -24,11 +37,22 @@ const Cart = () => {
     const [total, setTotal] = useState(0)
     const totalCost = (carts) => {
         const total = carts.reduce((sum, item) => sum + (item.price || 0), 0);
-        console.log("Calculated total cost:", total)
         setTotal(total)
 
     }
+    const handleProduct = () => {
+        document.getElementById('my_modal_2').showModal()
 
+        setProducts([])
+        setTimeout(() => {
+            setTotal(0)
+
+        }, 1000);
+        localStorage.removeItem('product-list')
+
+    }
+
+    // const productLength = products.length
 
     return (
         <div className='w-10/12 mx-auto my-12'>
@@ -38,8 +62,32 @@ const Cart = () => {
                 </div>
                 <div className='flex items-center gap-6'>
                     <h1 className='text-2xl font-semibold'>Total Cost: {total}</h1>
-                    <button className='btn rounded-full border border-[#9538E2]'>Sort by Price</button>
-                    <button className='btn rounded-full border border-[#9538E2]'>Purchase</button>
+                    <button
+                        onClick={handleSort}
+                        className={`btn rounded-full border border-[#9538E2] ${isSorted ? 'active' : ''}`}
+                    >
+                        Sort by Price
+                    </button>
+                    <button onClick={() => handleProduct()} className='btn rounded-full border border-[#9538E2]'>Purchase</button>
+                    {/* modal */}
+                    {/* Open the modal using document.getElementById('ID').showModal() method */}
+                    <button className="btn hidden" onClick={() => document.getElementById('my_modal_2').showModal()}>open modal</button>
+                    <dialog id="my_modal_2" className="modal">
+                        <div className="modal-box 
+                        place-items-center">
+                            <img src={modalLogo} alt="" />
+
+                            <h3 className="font-bold text-lg mt-3 border-b-2">Payment Successfully!</h3>
+
+                            <p className="py-4 text-sm  ">Thanks for purchasing</p>
+                            <p className='text-base font-semibold'>Total: ${total}</p>
+                            <form method="dialog" className="modal-backdrop my-3">
+                                <button className='btn'>close</button>
+                            </form>
+
+                        </div>
+
+                    </dialog>
                 </div>
             </div>
             <div className='my-12'>
