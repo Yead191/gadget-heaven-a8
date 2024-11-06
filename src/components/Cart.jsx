@@ -47,7 +47,7 @@ const Cart = () => {
         setTimeout(() => {
             setTotal(0)
 
-        }, 3000);
+        }, 2000);
         localStorage.removeItem('product-list')
 
     }

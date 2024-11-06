@@ -7,7 +7,7 @@ const Footer = () => {
                 <h1 className='font-bold text-4xl pt-16'>Gadget Heaven</h1>
                 <p className='text-base text-gray-500 leading-4 mt-3 mb-7 '>Leading the way in cutting-edge technology and innovation.</p>
 
-                <p className='text-xs'>Copyright © {new Date().getFullYear()} - All right reserved by yead.</p>
+                <p className='text-xs'>Copyright © {new Date().getFullYear()} - All right reserved by Yead.</p>
 
             </div>
             <div className='border border-base-200 mt-2'></div>
