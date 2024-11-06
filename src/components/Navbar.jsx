@@ -1,9 +1,10 @@
 import React from 'react';
 import { IoCartOutline } from "react-icons/io5";
 import { LuHeart } from "react-icons/lu";
-import { Link, NavLink, useLocation } from 'react-router-dom';
+import { Link, NavLink, useLocation, useNavigate } from 'react-router-dom';
 
 const Navbar = () => {
+    const dashNavigate = useNavigate()
     const location = useLocation();
     const isHome = location.pathname === '/' || location.pathname.startsWith('/category/')
 
@@ -48,9 +49,9 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-3">
-                    <button className="btn"><IoCartOutline className='text-xl' />
+                    <button onClick={()=> dashNavigate('/dashboard')} className="btn btn-sm md:btn-md"><IoCartOutline className='md:text-xl' />
                     </button>
-                    <button className="btn"><LuHeart className='text-xl' />
+                    <button onClick={()=> dashNavigate('/dashboard/wishlist')} className="btn btn-sm md:btn-md"><LuHeart className='md:text-xl' />
                     </button>
                 </div>
             </div>

@@ -10,6 +10,7 @@ import ProductDetails from "../components/ProductDetails";
 import Dashboard from "../pages/Dashboard";
 import Cart from "../components/Cart";
 import Wishlist from "../components/Wishlist";
+import Statistics from "../pages/Statistics";
 
 
 
@@ -53,8 +54,15 @@ import Wishlist from "../components/Wishlist";
                 {
                     path: '/dashboard/wishlist',
                     element: <Wishlist></Wishlist>
-                }
+                },
+                
             ]
+        },
+        {
+            path: '/statistics',
+            element: <Statistics></Statistics>,
+            loader: ()=> fetch('../fakeData.json')
+
         }
       ]
     },
