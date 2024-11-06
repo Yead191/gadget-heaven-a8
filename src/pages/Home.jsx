@@ -1,10 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import BannerHome from '../components/BannerHome';
 import { Outlet, useLoaderData } from 'react-router-dom';
 import Categories from '../components/Categories';
 
 const Home = () => {
     const categories = useLoaderData()
+    useEffect(()=>{
+        document.title = 'Gadgets | Gadget Heaven'
+    },[])
     return (
         <div>
             <BannerHome></BannerHome>

@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HeadingBanner from '../components/HeadingBanner';
 import { useLoaderData } from 'react-router-dom';
 import OfferCard from '../components/OfferCard';
 
 const Offer = () => {
+    useEffect(()=>{
+        document.title = 'Offers | Gadget Heaven'
+    },[])
+
     const offers = useLoaderData()
     // console.log(data);
     return (

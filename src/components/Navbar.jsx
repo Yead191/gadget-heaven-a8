@@ -12,8 +12,8 @@ const Navbar = () => {
         <>
             <li><NavLink to='/'>Home</NavLink></li>
             <li><NavLink to='/statistics'>Statistics</NavLink></li>
-            <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
             <li><NavLink to='/offers'>Offers</NavLink></li>
+            <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
         </>
     )
 
@@ -50,9 +50,9 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end gap-3">
-                    <button onClick={()=> dashNavigate('/dashboard')} className="btn btn-sm md:btn-md"><IoCartOutline className='md:text-xl' />
+                    <button onClick={()=> dashNavigate('/dashboard')} className="btn btn-sm md:btn-md rounded-full"><IoCartOutline className='md:text-xl' />
                     </button>
-                    <button onClick={()=> dashNavigate('/dashboard/wishlist')} className="btn btn-sm md:btn-md"><LuHeart className='md:text-xl' />
+                    <button onClick={()=> dashNavigate('/dashboard/wishlist')} className="btn btn-sm md:btn-md rounded-full"><LuHeart className='md:text-xl' />
                     </button>
                 </div>
             </div>

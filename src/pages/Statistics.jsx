@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { BarChart, Bar, XAxis, YAxis, Tooltip, Legend, CartesianGrid, ResponsiveContainer } from 'recharts';
 import HeadingBanner from '../components/HeadingBanner';
 import { useLoaderData } from 'react-router-dom';
@@ -6,6 +6,10 @@ import { useLoaderData } from 'react-router-dom';
 
 
 const Statistics = () => {
+    useEffect(()=>{
+        document.title = 'Statistics | Gadget Heaven'
+    },[])
+
     const data = useLoaderData()
     // const { product_title, price, rating } = data
     // console.log(data);

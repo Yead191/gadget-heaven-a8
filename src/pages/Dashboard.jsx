@@ -1,7 +1,11 @@
+import { useEffect } from 'react';
 import HeadingBanner from '../components/HeadingBanner';
 import { Outlet } from 'react-router-dom';
 
 const Dashboard = () => {
+    useEffect(()=>{
+        document.title = 'Dashboard | Gadget Heaven'
+    },[])
     
 
     return (
