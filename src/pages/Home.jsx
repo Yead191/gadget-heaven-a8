@@ -11,12 +11,12 @@ const Home = () => {
     return (
         <div>
             <BannerHome></BannerHome>
-            <div className='md:flex my-12 md:w-10/12 mx-auto gap-4  '>
+            <div className='md:flex my-12 md:w-10/12 mx-auto gap-4  p-2'>
                 <div className='md:w-1/4 border border-[#9538E2] bg-white rounded-xl p-6 md:sticky md:top-32 h-max'>
                 <Categories categories={categories}></Categories>
 
                 </div>
-                <div className='md:w-3/4 '>
+                <div className='md:w-3/4 p-2'>
                     <Outlet></Outlet>
 
                 </div>

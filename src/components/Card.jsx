@@ -5,7 +5,7 @@ const Card = ({ product }) => {
     // console.log(product);
     const { product_id, product_title, product_image, price } = product || {}
     return (
-        <div className="card card-compact bg-base-100 w-96 shadow-xl">
+        <div className="card card-compact bg-base-100 shadow-xl">
             <figure>
                 <img className='p-5 rounded-xl w-full h-[300px] object-cover  overflow-hidden'
                     src={product_image}

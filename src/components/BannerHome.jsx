@@ -11,7 +11,7 @@ const BannerHome = () => {
                 <p className='leading-6 mb-6'>Explore the latest gadgets that will take your experience to the next level. From smart devices to <br /> the coolest accessories, we have it all!</p>
                 <button onClick={()=> goDashboard('/dashboard')} className='btn rounded-full px-10'>Shop Now</button>
             </div>
-            <div className={`lg:h-[500px] lg:w-[1110px] mx-auto p-6 border border-white relative -top-40 lg:-top-60 overflow-hidden rounded-xl shadow-sm`}>
+            <div className={`lg:h-[500px] lg:w-8/12 mx-auto p-6 border border-white relative -top-40 lg:-top-60 overflow-hidden rounded-xl shadow-sm`}>
                 <img className='w-full h-full object-cover rounded-xl' src={bannerImage} alt="" />
 
             </div>
