@@ -10,14 +10,14 @@ const CartDetails = ({ product, handleRemove }) => {
 
     return (
         <div className="card md:card-side bg-white shadow-xl mb-4 md:h-[170px] items-center">
-            <figure>
-                <img className='md:w-[200px] p-2 object-cover h-[160px]'
+            <figure className="md:w-[200px]">
+                <img className=' w-full p-2 object-cover h-[160px]'
                     src ={product_image}
                     alt="" />
             </figure>
-            <div className="card-body">
+            <div className="card-body md:w-6/12 ">
                 <h2 className="card-title">{product_title}</h2>
-                <p className='md:w-[1000px] overflow-y-scroll'> {description}</p>
+                <p className='md:w-10/12 overflow-y-scroll'> {description}</p>
                 <p className="mt-2">Price: ${price}</p>
 
 
