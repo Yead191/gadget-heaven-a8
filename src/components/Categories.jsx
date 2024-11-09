@@ -18,7 +18,7 @@ const Categories = ({ categories }) => {
                 <NavLink
                     to={category.category_name === "All Products" ? "/" : `/category/${category.category_name}`}
                     key={category.category_id}
-                    className={`btn w-10/12 mx-auto mt-1 mb-2 ${
+                    className={`btn w-10/12 mx-auto mt-1 mb-2 transition hover:scale-110 ${
                         isActive === category.category_name ? "active" : ""
                     }`}
                     onClick={() => setIsActive(category.category_name)}
