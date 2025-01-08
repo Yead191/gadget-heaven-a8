@@ -4,7 +4,7 @@
 ###
 
 <div align="center">
-  <img height="200" src="[https://i.ibb.co.com/1dMVJNG/yead-portfolio.png](https://i.ibb.co.com/PhPHRRy/Gadget-heaven.png)"  />
+  <img height="200" src="https://i.ibb.co.com/PhPHRRy/Gadget-heaven.png"  />
 </div>
 
 Gadget Heaven is an e-commerce platform dedicated to the latest and greatest in tech gadgets.
